@@ -4,10 +4,10 @@
 # 4
 
 def sum(a, b):
-    if b == 0:
-        return a
+    if a == 0:
+        return b
     else:
-        return sum(a ^ b, (a & b) << 1)
+        return 1 + sum(a - 1, b)
 
 nmbrA = int(input("Введите первое число:"))
 nmbrB = int(input("Введите второе число:"))
